@@ -9,8 +9,8 @@ Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
 
 def main():
     """ Calls the other functions to test them. """
-    run_test_multiply_numbers()
-    # run_test_sum_numbers()
+    # run_test_multiply_numbers()
+    run_test_sum_numbers()
     # run_test_print_characters()
     # run_test_print_characters_slanted()
 
@@ -159,8 +159,8 @@ def run_test_sum_numbers():
 
     # TO DO 3 (continued): Add your ADDITIONAL test(s) here:
     expected = 32
-    answer = sum_numbers([2,1,4], [], [23], [2])
-
+    answer = sum_numbers(([2,1,4], [], [23], [2]))
+    print('Expected and actual are:', expected, answer)
 def sum_numbers(seq_seq):
     """
     Returns the sum of the numbers in the given sequence
@@ -172,9 +172,16 @@ def sum_numbers(seq_seq):
                     and each item in the subsequences is a number.
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # ------------------------------------------------------------------
+    sum = 0
+    for k in range(len(seq_seq)):
+        sequence = seq_seq[k]
+        for j in range(len(sequence)):
+            sum = sum + sequence[j]
+    return sum
+
 
 
 def run_test_print_characters():
