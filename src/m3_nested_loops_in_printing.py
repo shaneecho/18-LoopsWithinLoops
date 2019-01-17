@@ -44,7 +44,7 @@ def rectangle_of_stars(r, c):
     Preconditions:  r and c are non-negative integers.
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Some tests are already written for you (above).
     #
     #  *** Unless your instructor directs you otherwise,
@@ -61,7 +61,10 @@ def rectangle_of_stars(r, c):
     #   in this or the other problems in this module, as doing so
     #   would defeat the goal of providing practice at loops within loops.
     # ------------------------------------------------------------------
-
+    for j in range(r):
+        for k in range(c):
+            print('*', end="")
+        print()
 
 def run_test_triangle_of_stars():
     """ Tests the    triangle_of_stars    function. """
@@ -98,7 +101,7 @@ def triangle_of_stars(r):
     Precondition:  r is a non-negative integer.
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Some tests are already written for you (above).
     #
     #  *** Unless your instructor directs you otherwise,
@@ -116,7 +119,10 @@ def triangle_of_stars(r):
     #   in this or the other problems in this module, as doing so
     #   would defeat the goal of providing practice at loops within loops.
     # ------------------------------------------------------------------
-
+    for k in range(r):
+        for k in range(1,k+2):
+            print('*', end="")
+        print()
 
 def run_test_decreasing_exclamation_marks():
     """ Tests the    decreasing_exclamation_marks    function. """
