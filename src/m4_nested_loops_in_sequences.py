@@ -161,6 +161,7 @@ def run_test_sum_numbers():
     expected = 32
     answer = sum_numbers(([2,1,4], [], [23], [2]))
     print('Expected and actual are:', expected, answer)
+
 def sum_numbers(seq_seq):
     """
     Returns the sum of the numbers in the given sequence
